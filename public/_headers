@@ -5,6 +5,6 @@
   X-Frame-Options: DENY
   Permissions-Policy: geolocation=(), microphone=(), camera=()
 
-/resume/*.pdf
+/resume/*
   X-Frame-Options: SAMEORIGIN
-  Content-Security-Policy: frame-ancestors 'self';
+  Content-Security-Policy: frame-ancestors 'self'
