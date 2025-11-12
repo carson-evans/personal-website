@@ -1,36 +1,47 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import BaseHead from '../components/BaseHead.astro';
+import Header   from '../components/Header.astro';
+import Footer   from '../components/Footer.astro';
 ---
 
-<Layout title="About — Carson A. Evans">
-  <article class="prose" style="padding:2rem 0;">
-    <h1>About</h1>
+<html lang="en">
+  <head>
+    <BaseHead title="About — Carson A. Evans" description="Boston-based IT student focused on networking, cloud, and reliable ops." />
+  </head>
+  <body>
+    <Header />
+    <main class="container">
+      <article class="prose" style="padding:2rem 0;">
+        <h1>About</h1>
 
-    <p>
-      I’m <strong>Carson Evans</strong>, a senior at the University of Massachusetts Boston
-      pursuing a <strong>B.S. in Information Technology</strong> (Business Intelligence track).
-      I run a small homelab (UniFi UCG Max, VLANs, Hyper-V, Docker on Windows &amp; Linux)
-      and I care about pragmatic security and reliable ops.
-    </p>
+        <p>
+          I’m <strong>Carson Evans</strong>, a senior at the University of Massachusetts Boston
+          pursuing a <strong>B.S. in Information Technology</strong> (Business Intelligence track).
+          I run a small homelab (UniFi UCG Max, VLANs, Hyper-V, Docker on Windows &amp; Linux)
+          and I care about pragmatic security and reliable ops.
+        </p>
 
-    <p>
-      Lately I’ve been leveling up networking and cloud fundamentals and building
-      simple, durable infrastructure that’s easy to maintain.
-    </p>
+        <p>
+          Lately I’ve been leveling up networking and cloud fundamentals and building
+          simple, durable infrastructure that’s easy to maintain.
+        </p>
 
-    <h2>Interests</h2>
-    <ul>
-      <li>Layer-3 / Layer-2 networking (routing, VLAN segmentation, remote access)</li>
-      <li>AWS, CI/CD, and observability</li>
-      <li>Automating the boring stuff (PowerShell, Python)</li>
-    </ul>
+        <h2>Interests</h2>
+        <ul>
+          <li>Layer-3 / Layer-2 networking (routing, VLAN segmentation, remote access)</li>
+          <li>AWS, CI/CD, and observability</li>
+          <li>Automating the boring stuff (PowerShell, Python)</li>
+        </ul>
 
-    <h2>Elsewhere</h2>
-    <p>
-      <a href="https://www.linkedin.com/in/carson-evans42" rel="me noopener" target="_blank">LinkedIn</a> ·
-      <a href="https://github.com/carson-evans" rel="noopener" target="_blank">GitHub</a>
-    </p>
+        <h2>Elsewhere</h2>
+        <p>
+          <a href="https://www.linkedin.com/in/carson-evans42" rel="me noopener" target="_blank">LinkedIn</a> ·
+          <a href="https://github.com/carson-evans" rel="noopener" target="_blank">GitHub</a>
+        </p>
 
-    <p class="muted">Best way to reach me: LinkedIn DMs.</p>
-  </article>
-</Layout>
+        <p class="muted">Best way to reach me: LinkedIn DMs.</p>
+      </article>
+    </main>
+    <Footer />
+  </body>
+</html>
