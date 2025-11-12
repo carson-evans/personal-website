@@ -1,0 +1,70 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<html lang="en">
+  <head>
+    <BaseHead title={`Résumé — ${SITE_TITLE}`} description="View or download Carson Evans’ résumé." />
+  </head>
+  <body>
+    <Header />
+
+    <main class="container" style="padding:2rem 0;">
+      <section class="prose" style="text-align:center;">
+        <h1>Résumé</h1>
+        <p>
+          <a
+            href="/resume/Carson-Evans-Resume.pdf"
+            class="download-button"
+            target="_blank"
+            rel="noopener"
+            download
+          >
+            ⬇ Download PDF
+          </a>
+        </p>
+
+        <iframe
+          src="/resume/Carson-Evans-Resume.pdf"
+          width="100%"
+          height="900px"
+          style="border:1px solid #ddd; border-radius:8px;"
+          title="Carson Evans Résumé PDF"
+        ></iframe>
+
+        <p style="margin-top:2rem;">
+          <a
+            href="/resume/Carson-Evans-Resume.pdf"
+            class="download-button"
+            target="_blank"
+            rel="noopener"
+            download
+          >
+            ⬇ Download PDF
+          </a>
+        </p>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
+
+<style>
+  .download-button {
+    display: inline-block;
+    background-color: var(--accent, #0078ff);
+    color: white;
+    padding: 0.75em 1.5em;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+  }
+
+  .download-button:hover {
+    background-color: #005fcc;
+  }
+</style>
